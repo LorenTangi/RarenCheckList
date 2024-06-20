@@ -123,7 +123,7 @@ useEffect (() => {
       >
 
       <View style={styles.header}>
-        <Text style={styles.title}> Lista de Tarefas</Text>
+        <Text style={styles.title}> CheckList </Text>
         <View> 
           <Ionicons name="trash" size={32} color="#fff" onPress={removeAll}/>
         </View>
