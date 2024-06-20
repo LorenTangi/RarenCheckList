@@ -65,7 +65,7 @@ useEffect (() => {
 
   const markItemBought = itemId => {
     const newItems = items.map((item) => {
-      if (item.id == item.Id) {
+      if (item.id == itemId) {
         return { ...item, bought: true }
       }
       return item;
@@ -75,7 +75,7 @@ useEffect (() => {
 
   const unmarkItemBought = itemId => {
     const newItems = items.map((item) => {
-      if (item.id == item.Id) {
+      if (item.id == itemId) {
         return { ...item, bought: false }
       }
       return item;
@@ -134,11 +134,11 @@ useEffect (() => {
         contentContainerStyle={{padding: 20, paddingBottom: 100, color: 'fff'}}      
         data={items}
         renderItem={({item}) =>
-        <ItemList
+        <ItemList style={styles.text}
         item={item} 
         markItem= {markItemBought}
         unmarkItem={unmarkItemBought}
-        removeItem= {removeItem}
+        removeItem= {removeItem} 
         /> 
       }
      />
@@ -147,7 +147,7 @@ useEffect (() => {
       <View style={styles.footer}>
         <View style= {styles.inputContainer}>
           <TextInput 
-          color="#fff"
+          color="#000"
           fontSize={18}
           placeholderTextColor="#aeaeae"
           placeholder="Digite o nome do produto..."
@@ -156,7 +156,7 @@ useEffect (() => {
           />
         </View>
         <TouchableOpacity style={styles.iconContainer} onPress={addItem}>
-         <Ionicons name="add" size={36} color= "#fff" />
+         <Ionicons name="add" size={36} color= "#fff"  />
          </TouchableOpacity>
       </View>
       </ImageBackground>

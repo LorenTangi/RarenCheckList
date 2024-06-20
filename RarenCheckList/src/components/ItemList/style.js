@@ -6,28 +6,29 @@ export const styles = StyleSheet.create({
         padding: 15,
         elevation: 12,
         borderRadius: 7,
-        backgroundColor: "#000000c0",
+        backgroundColor: "#27233a",
         borderWidth: 2,
         borderColor: "white",
         marginVertical: 5,
         flexDirection: "row",
         justifyContent: "space-between",
-        alignItems: "center"
+        alignItems: "center",
+        // color: '#fff4e4'
     },
-    ItemToBuy: {
-        color: "#ffffff",
+    itemToBuy: {
+        color: '#fff4e4',
         fontSize: 22,
         textDecorationLine: "none"
     },
     itemBought: {
-        color: "#ffffff",
+        color: '#fff4e4',
         fontSize: 22,
         textDecorationLine: "line-through"
     },
     actionIcon: {
         height: 40,
         width: 40,
-        backgroundColor: "darkGreen",
+        backgroundColor: "green",
         justifyContent: "center",
         alignItems: "center",
         marginLeft: 10,

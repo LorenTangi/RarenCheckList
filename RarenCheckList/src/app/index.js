@@ -18,7 +18,7 @@ export default function Welcome() {
           Monte a sua check lista e não esqueça mais 
           dos seus compromissos do dia-a-dia!!
         </Text>
-        <Link style={styles.button} href= {"/home"}>
+        <Link style={styles.button} href={"/home"}>
           <Text style={styles.buttonText}>Acessar</Text>
         </Link>
       </View>

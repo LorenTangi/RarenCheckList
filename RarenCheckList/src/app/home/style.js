@@ -37,15 +37,19 @@ export const styles = StyleSheet.create({
         borderRadius: 30,
         paddingHorizontal: 20,
         justifyContent: "center",
+        color: "white"
     },
     iconContainer:{
         borderRadius: 25,
         height: 50,
         width: 50,
-        backgroundColor: "#000",
-        elevation: 40,
+        backgroundColor: "#27233a",
         justifyContent: "center",
         alignItems: "center",
     },
+    text: {
+        color: 'white',
+        backgroundColor: 'white'
+    }
 })
 
